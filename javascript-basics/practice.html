@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+email<br>
+<input type="text" value="enter your email" onfocus="this.style.color='yellow';" onblur="this.style.color='blue';">
+<img src="images/map.png" onMouseover="src='images/home.png' ">
+<img src="images/logo.png" onclick="alert('the image');">
+<input type="button" value="clickme"  onclick="alert('this is my world');">
+<a href="#" onClick="alert(' Hi' ) ; ">Click</a>
+<a href="# " onClick="popup(' iqra' ) ; ">Click</a>
+<h1 id="myheading">My Heading</h1>
+<table border="1px" width="250px" cellspacing="0px">
+    <tr>
+        <td>Employee Id</td>
+        <td>Employee Name</td>
+    </tr>
+    <tr>
+        <td>12045</td>
+        <td>Salman Khan</td>
+    </tr>
+</table>
+<script>
+   /* alert("hi my browser");
+    var ans=prompt("what is your name?","");
+    if(ans)
+    {
+        alert("my name is"+ans);
+    }
+    else
+    {
+        alert("you refused");
+    }*/
+
+function popup(massage)
+{
+    alert(massage);
+}
+   var heading=document.getElementById("myheading");
+    heading.style.color="red";
+   var tdElement = document.getElementsByTagName('td');
+   var tdLength = tdElement.length;
+   for(var i = 0; i < tdLength; i++)
+   {
+       tdElement[i].style.color = 'gray';
+   }
+</script>
+</body>
+</html>
